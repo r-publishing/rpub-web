@@ -20,7 +20,7 @@ setup: |
 
 <BannerSection>
   <Banner>
-    <span style="color: #A93226;">RChain 2 Publishing Cooperative</span>
+    <span style="color: #A93226;">RChain Publishing Cooperative</span>
     ===============
     <p class="lead hero-small-text">Sample text sample text sample text sample text sample text sample text. Sample text sample text sample text sample text sample text sample text. Sample text sample text sample text sample text sample text sample text.</p>
     <p class="lead">
