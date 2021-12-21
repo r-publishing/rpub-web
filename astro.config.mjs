@@ -1,5 +1,6 @@
 import path from 'path';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   //projectRoot: '.',     // Where to resolve all URLs relative to. Useful if you have a monorepo project.
   // pages: './src/pages', // Path to Astro components, pages, and data
@@ -14,7 +15,8 @@ export default {
     // port: 3000,             // The port to run the dev server on.
   },
   renderers: [
-    "@astrojs/renderer-svelte"
+    "@astrojs/renderer-svelte",
+    "@astrojs/renderer-react"
   ],
   vite: {
     resolve: {
@@ -22,5 +24,14 @@ export default {
         '@': path.resolve('/src'),
       },
     },
+    /*
+    ssr: {
+      noExternal: [
+        "@ionic/core",
+        "@ionic/react",
+      ],
+    },
+    */
+    //optimizeDeps: { include: ["@ionic/core", "@ionic/react"] },
   }
 };

@@ -16,6 +16,9 @@ setup: |
 
   import BulletpointLayout from '@/sections/bulletpoints/BulletpointLayout.astro';
   import FeatureLayout from '@/sections/features/FeatureLayout.astro';
+
+  import VideoPlayer from '@/components/VideoPlayer.svelte';
+  import { Button } from "ui";
 ---
 
 <BannerSection>
@@ -26,7 +29,9 @@ setup: |
     <p class="lead">
       <a href="#features" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
     </p>
+    <Button client:only="react"></Button>
   </Banner>
+  <VideoPlayer />
 </BannerSection>
 
 <BulletpointsSection>
